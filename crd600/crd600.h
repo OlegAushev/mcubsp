@@ -1,6 +1,7 @@
 #pragma once
 
 
+#ifdef CRD600
 #define USE_SD_PINS_FOR_PROFILING
 
 
@@ -126,4 +127,8 @@ public:
 };
 
 } // namespace crd600
+
+
+#endif
+
 

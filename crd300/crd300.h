@@ -1,11 +1,3 @@
-/**
- * @defgroup crd300 CRD300
- *
- * @file
- * @ingroup crd300
- */
-
-
 #pragma once
 
 
@@ -23,9 +15,6 @@
 
 
 namespace crd300 {
-/// @addtogroup crd300
-/// @{
-
 
 const size_t PHASE_COUNT = 3;
 
@@ -239,8 +228,6 @@ public:
 	void toggleLed(Led led) { ledPins[led].toggle(); }
 };
 
-
-/// @}
 } // namespace crd300
 
 

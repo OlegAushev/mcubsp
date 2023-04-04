@@ -1,6 +1,9 @@
 #pragma once
 
 
+#ifdef _LAUNCHXL_F28379D
+
+
 #include <mculib_c28x/f2837xd/gpio/gpio.h>
 
 
@@ -33,4 +36,7 @@ public:
 };
 
 } // namespace bsp
+
+
+#endif
 

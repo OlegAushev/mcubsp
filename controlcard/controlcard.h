@@ -1,6 +1,9 @@
 #pragma once
 
 
+#ifdef CONTROLCARD
+
+
 #include <mculib_c28x/f2837xd/gpio/gpio.h>
 
 
@@ -20,4 +23,7 @@ public:
 };
 
 } // namespace bsp
+
+
+#endif
 

@@ -1,6 +1,9 @@
 #include "crd600.h"
 
 
+#ifdef CRD600
+
+
 namespace bsp {
 
 const emb::array<mcu::gpio::Config, 6> crd600::psdis_pins_configs = {
@@ -140,4 +143,7 @@ void crd600::reset_all_drivers() {
 }
 
 } // namespace bsp
+
+
+#endif
 

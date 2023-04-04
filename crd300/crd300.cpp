@@ -1,13 +1,7 @@
-/**
- * @file
- * @ingroup crd300
- */
+#include "controller.h"
 
 
 #ifdef CRD300
-
-
-#include "controller.h"
 
 
 namespace crd300 {

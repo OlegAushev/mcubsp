@@ -1,6 +1,9 @@
 #include "controlcard.h"
 
 
+#ifdef CONTROLCARD
+
+
 namespace bsp {
 
 mcu::gpio::Output controlcard::led_red;
@@ -21,4 +24,7 @@ void controlcard::init_led_red(mcu::gpio::MasterCore core) {
 }
 
 } // namespace bsp
+
+
+#endif
 
