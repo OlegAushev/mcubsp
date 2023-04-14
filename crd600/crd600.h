@@ -17,7 +17,7 @@ namespace bsp {
 class crd600
 {
 public:
-    static const size_t phase_count = 6;
+    static const int phase_count = 6;
 
     SCOPED_ENUM_UT_DECLARE_BEGIN(Phase, uint32_t) {
         u,

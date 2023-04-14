@@ -80,7 +80,7 @@ Controller::Controller()
 	shutdownNeg15VPin.init(SHUTDOWN_NEG15V_PIN_CONFIG);
 
 #ifndef CRD300_LEDS_NOT_AVAILABLE
-	for (size_t i = 0; i < 4; ++i)
+	for (int i = 0; i < 4; ++i)
 	{
 		ledPins[i].init(LED_PINS_CONFIG[i]);
 	}
@@ -99,12 +99,12 @@ Controller::Controller()
 ///
 void Controller::resetDrivers()
 {
-	for (size_t i = 0; i < PHASE_COUNT; ++i)
+	for (int i = 0; i < PHASE_COUNT; ++i)
 	{
 		ocenPins[i].set(emb::PIN_ACTIVE);
 	}
 	mcu::delay_us(100);
-	for (size_t i = 0; i < PHASE_COUNT; ++i)
+	for (int i = 0; i < PHASE_COUNT; ++i)
 	{
 		ocenPins[i].set(emb::PIN_INACTIVE);
 	}

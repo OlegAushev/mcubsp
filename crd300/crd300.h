@@ -16,7 +16,7 @@
 
 namespace crd300 {
 
-const size_t PHASE_COUNT = 3;
+const int PHASE_COUNT = 3;
 
 
 /// Phase names.

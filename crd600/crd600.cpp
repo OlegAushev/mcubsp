@@ -104,7 +104,7 @@ mcu::gpio::Output crd600::profiler_pin_d3;
 
 
 void crd600::init() {
-    for (size_t i = 0; i < phase_count; ++i) {
+    for (int i = 0; i < phase_count; ++i) {
         psdis_pins[i].init(psdis_pins_configs[i]);
         len_pins[i].init(len_pins_configs[i]);
         ocen_pins[i].init(ocen_pins_configs[i]);
@@ -132,11 +132,11 @@ void crd600::init() {
 
 
 void crd600::reset_all_drivers() {
-    for (size_t i = 0; i < phase_count; ++i) {
+    for (int i = 0; i < phase_count; ++i) {
         ocen_pins[i].set();
     }
     mcu::delay(emb::chrono::microseconds(100));
-    for (size_t i = 0; i < phase_count; ++i) {
+    for (int i = 0; i < phase_count; ++i) {
         ocen_pins[i].reset();
     }
     mcu::delay(emb::chrono::milliseconds(10));
