@@ -1,0 +1,38 @@
+#ifdef STM32H7xx_Nucleo
+
+#include "button.h"
+
+
+namespace bsp {
+
+namespace nucleo {
+
+mcu::gpio::Input button;
+const mcu::gpio::Config button_config = {
+    .port = GPIOC,
+    .pin = {
+        .Pin = GPIO_PIN_13,
+        .Mode = GPIO_MODE_IT_RISING_FALLING,
+        .Pull = GPIO_NOPULL,
+        .Speed = GPIO_SPEED_FREQ_LOW,
+        .Alternate = 0
+    },
+    .active_state = emb::gpio::ActiveState::high
+};
+
+
+void init_button() {
+    button.init(button_config);
+}
+
+
+__attribute__((weak)) void on_button_interrupt() {
+    /* DO NOTHING */
+}
+
+} // namespace nucleo
+
+} // namespace bsp
+
+#endif
+
