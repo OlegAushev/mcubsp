@@ -1,7 +1,7 @@
 #pragma once
 
 
-#ifdef STM32H7xx_Nucleo
+#ifdef STM32H7xx_NUCLEO
 
 #include <mculib_stm32/h7/gpio/gpio.h>
 
