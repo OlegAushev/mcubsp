@@ -1,9 +1,9 @@
 #pragma once
 
 
-#ifdef STM32H743_NUCLEO
+#ifdef STM32F446_NUCLEO
 
-#include <mculib_stm32/h7/gpio/gpio.h>
+#include <mculib_stm32/f4/gpio/gpio.h>
 
 
 namespace bsp {
@@ -29,4 +29,3 @@ void init_led_red();
 } // namespace bsp
 
 #endif
-

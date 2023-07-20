@@ -1,4 +1,4 @@
-#ifdef STM32H7xx_NUCLEO
+#ifdef STM32H743_NUCLEO
 
 #include "button.h"
 

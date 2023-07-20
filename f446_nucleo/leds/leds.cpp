@@ -1,4 +1,4 @@
-#ifdef STM32H743_NUCLEO
+#ifdef STM32F446_NUCLEO
 
 #include "leds.h"
 
@@ -68,4 +68,3 @@ void init_led_red() {
 } // namespace bsp
 
 #endif
-
