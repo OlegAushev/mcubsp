@@ -47,5 +47,5 @@
 #define CN12_TIM4_CH3_AF	GPIO_AF2_TIM4
 #define CN12_TIM4_CH4_AF	GPIO_AF2_TIM4
 
-#endif
 
+#endif
