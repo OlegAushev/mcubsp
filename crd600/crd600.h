@@ -7,8 +7,8 @@
 
 #include <mculib_c28x/f2837xd/system/system.h>
 #include <mculib_c28x/f2837xd/gpio/gpio.h>
-#include <emblib_c28x/core.h>
-#include <emblib_c28x/array.h>
+#include <emblib/core.h>
+#include <emblib/array.h>
 #include <math.h>
 
 
