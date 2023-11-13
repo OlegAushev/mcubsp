@@ -1,6 +1,7 @@
 #pragma once
 
 
+#ifdef MCUDRV_STM32
 #ifdef STM32H743_NUCLEO
 
 
@@ -48,4 +49,5 @@
 #define CN12_48_TIM4_CH4_AF     GPIO_AF2_TIM4
 
 
+#endif
 #endif

@@ -1,6 +1,7 @@
 #pragma once
 
 
+#ifdef MCUDRV_C28X
 #ifdef CRD600
 #define USE_SD_PINS_FOR_PROFILING
 
@@ -13,6 +14,7 @@
 
 
 namespace bsp {
+
 
 class crd600
 {
@@ -126,9 +128,9 @@ public:
     static void disable_pos_15v() { shutdownPos15VPin.set(); }
 };
 
+
 } // namespace crd600
 
 
 #endif
-
-
+#endif

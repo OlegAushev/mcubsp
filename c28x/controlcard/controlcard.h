@@ -1,6 +1,7 @@
 #pragma once
 
 
+#ifdef MCUDRV_C28X
 #ifdef CONTROLCARD
 
 
@@ -8,6 +9,7 @@
 
 
 namespace bsp {
+
 
 class controlcard {
 private:
@@ -22,8 +24,9 @@ public:
     static const uint32_t cana_tx_pinmux = GPIO_31_CANTXA;
 };
 
+
 } // namespace bsp
 
 
 #endif
-
+#endif

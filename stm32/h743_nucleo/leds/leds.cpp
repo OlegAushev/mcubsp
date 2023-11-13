@@ -1,11 +1,15 @@
+#ifdef MCUDRV_STM32
 #ifdef STM32H743_NUCLEO
+
 
 #include "leds.h"
 
 
 namespace bsp {
 
+
 namespace nucleo {
+
 
 mcu::gpio::Output led_green;
 const mcu::gpio::Config led_green_config = {	
@@ -63,9 +67,12 @@ void init_led_red() {
     led_red.init(led_red_config);
 }
 
+
 } // namespace nucleo
+
 
 } // namespace bsp
 
-#endif
 
+#endif
+#endif

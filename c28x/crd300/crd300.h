@@ -1,6 +1,7 @@
 #pragma once
 
 
+#ifdef MCUDRV_C28X
 #ifdef CRD300
 #define CRD300_LEDS_NOT_AVAILABLE
 
@@ -15,6 +16,7 @@
 
 
 namespace crd300 {
+
 
 const int PHASE_COUNT = 3;
 
@@ -228,9 +230,10 @@ public:
 	void toggleLed(Led led) { ledPins[led].toggle(); }
 };
 
+
 } // namespace crd300
 
 
-#endif // #ifdef CRD300
-
+#endif
+#endif
 

@@ -1,6 +1,7 @@
 #pragma once
 
 
+#ifdef MCUDRV_C28X
 #ifdef _LAUNCHXL_F28379D
 
 
@@ -8,6 +9,7 @@
 
 
 namespace bsp {
+
 
 class launchpad {
 private:
@@ -35,8 +37,9 @@ public:
     static const uint32_t j5_i2cb_sda_pinmux = GPIO_40_SDAB;
 };
 
+
 } // namespace bsp
 
 
 #endif
-
+#endif

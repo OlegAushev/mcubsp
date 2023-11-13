@@ -1,14 +1,18 @@
 #pragma once
 
 
+#ifdef MCUDRV_STM32
 #ifdef STM32H743_NUCLEO
+
 
 #include <mcudrv/stm32/h7/gpio/gpio.h>
 
 
 namespace bsp {
 
+
 namespace nucleo {
+
 
 extern mcu::gpio::Output led_green;
 extern const mcu::gpio::Config led_green_config;
@@ -24,9 +28,12 @@ void init_led_green();
 void init_led_blue();
 void init_led_red();
 
+
 } // namespace nucleo
+
 
 } // namespace bsp
 
-#endif
 
+#endif
+#endif

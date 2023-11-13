@@ -1,11 +1,15 @@
+#ifdef MCUDRV_STM32
 #ifdef STM32H743_NUCLEO
+
 
 #include "button.h"
 
 
 namespace bsp {
 
+
 namespace nucleo {
+
 
 mcu::gpio::Input button;
 const mcu::gpio::Config button_config = {
@@ -30,9 +34,12 @@ __attribute__((weak)) void on_button_interrupt() {
     /* DO NOTHING */
 }
 
+
 } // namespace nucleo
+
 
 } // namespace bsp
 
-#endif
 
+#endif
+#endif

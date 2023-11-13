@@ -1,10 +1,12 @@
-#include "launchpad.h"
-
-
+#ifdef MCUDRV_C28X
 #ifdef _LAUNCHXL_F28379D
 
 
+#include "launchpad.h"
+
+
 namespace bsp {
+
 
 mcu::gpio::Output launchpad::led_blue;
 const mcu::gpio::Config launchpad::led_blue_config(
@@ -41,8 +43,9 @@ void launchpad::init_led_red(mcu::gpio::MasterCore core) {
     led_red.set_master_core(core);
 }
 
+
 } // namespace bsp
 
 
 #endif
-
+#endif

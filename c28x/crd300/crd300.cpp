@@ -1,7 +1,8 @@
-#include "crd300.h"
-
-
+#ifdef MCUDRV_C28X
 #ifdef CRD300
+
+
+#include "crd300.h"
 
 
 namespace crd300 {
@@ -115,6 +116,5 @@ void Controller::resetDrivers()
 } // namespace crd300
 
 
-#endif // #ifdef CRD300
-
-
+#endif
+#endif

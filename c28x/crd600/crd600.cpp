@@ -1,10 +1,12 @@
-#include "crd600.h"
-
-
+#ifdef MCUDRV_C28X
 #ifdef CRD600
 
 
+#include "crd600.h"
+
+
 namespace bsp {
+
 
 const emb::array<mcu::gpio::Config, 6> crd600::psdis_pins_configs = {
     mcu::gpio::Config(79, GPIO_79_GPIO79, mcu::gpio::Direction::output, emb::gpio::ActiveState::low, mcu::gpio::Type::std, mcu::gpio::QualMode::sync, 1),
@@ -142,8 +144,9 @@ void crd600::reset_all_drivers() {
     mcu::delay(emb::chrono::milliseconds(10));
 }
 
+
 } // namespace bsp
 
 
 #endif
-
+#endif

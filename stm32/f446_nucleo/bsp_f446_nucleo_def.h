@@ -1,7 +1,9 @@
 #pragma once
 
 
+#ifdef MCUDRV_STM32
 #ifdef STM32F446_NUCLEO
+
 
 // USART2
 #define CN9_4_USART_B_RX_PORT       GPIOD
@@ -72,4 +74,5 @@
 #define CN10_30_TIM1_BKIN_AF        GPIO_AF1_TIM1
 
 
+#endif
 #endif
