@@ -4,7 +4,7 @@
 #ifdef CONTROLCARD
 
 
-#include <mculib_c28x/f2837xd/gpio/gpio.h>
+#include <mcudrv/c28x/f2837xd/gpio/gpio.h>
 
 
 namespace bsp {
