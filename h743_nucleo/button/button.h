@@ -3,7 +3,7 @@
 
 #ifdef STM32H743_NUCLEO
 
-#include <mculib_stm32/h7/gpio/gpio.h>
+#include <mcudrv/stm32/h7/gpio/gpio.h>
 
 
 namespace bsp {
