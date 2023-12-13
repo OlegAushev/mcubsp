@@ -5,6 +5,9 @@
 #ifdef STM32H743_NUCLEO
 
 
+#include <mcudrv/stm32/h7/gpio/gpio.h>
+
+
 // USART2
 #define CN9_4_USART_B_RX_PORT   GPIOD
 #define CN9_4_USART_B_RX_PIN    GPIO_PIN_6
@@ -48,6 +51,14 @@
 #define CN12_46_TIM4_CH3_AF     GPIO_AF2_TIM4
 #define CN12_48_TIM4_CH4_AF     GPIO_AF2_TIM4
 
+// I2C
+#define CN9_21_I2C2_SDA_PORT    GPIOF
+#define CN9_21_I2C2_SDA_PIN     GPIO_PIN_0
+#define CN9_21_I2C2_SDA_AF      GPIO_AF4_I2C2
+
+#define CN9_19_I2C2_SCL_PORT    GPIOF
+#define CN9_19_I2C2_SCL_PIN     GPIO_PIN_1
+#define CN9_19_I2C2_SCL_AF      GPIO_AF4_I2C2
 
 #endif
 #endif
