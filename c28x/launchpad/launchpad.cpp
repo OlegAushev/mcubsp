@@ -13,7 +13,7 @@ const mcu::gpio::Config launchpad::led_blue_config(
     31,
     GPIO_31_GPIO31,
     mcu::gpio::Direction::output,
-    emb::gpio::ActiveState::low,
+    emb::gpio::active_state::low,
     mcu::gpio::Type::std,
     mcu::gpio::QualMode::sync,
     1
@@ -25,7 +25,7 @@ const mcu::gpio::Config launchpad::led_red_config(
     34,
     GPIO_34_GPIO34,
     mcu::gpio::Direction::output,
-    emb::gpio::ActiveState::low,
+    emb::gpio::active_state::low,
     mcu::gpio::Type::std,
     mcu::gpio::QualMode::sync,
     1
