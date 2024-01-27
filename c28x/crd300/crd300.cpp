@@ -71,26 +71,26 @@ Controller::Controller()
 {
 	for (uint32_t i = 0; i < 3; ++i)
 	{
-		psdisPins[i].init(PSDIS_PINS_CONFIG[i]);
-		lenPins[i].init(LEN_PINS_CONFIG[i]);
-		ocenPins[i].init(OCEN_PINS_CONFIG[i]);
-		faultPins[i].init(FAULT_PINS_CONFIG[i]);
+		psdisPins[i].initialize(PSDIS_PINS_CONFIG[i]);
+		lenPins[i].initialize(LEN_PINS_CONFIG[i]);
+		ocenPins[i].initialize(OCEN_PINS_CONFIG[i]);
+		faultPins[i].initialize(FAULT_PINS_CONFIG[i]);
 	}
 
-	shutdownPos15VPin.init(SHUTDOWN_POS15V_PIN_CONFIG);
-	shutdownNeg15VPin.init(SHUTDOWN_NEG15V_PIN_CONFIG);
+	shutdownPos15VPin.initialize(SHUTDOWN_POS15V_PIN_CONFIG);
+	shutdownNeg15VPin.initialize(SHUTDOWN_NEG15V_PIN_CONFIG);
 
 #ifndef CRD300_LEDS_NOT_AVAILABLE
 	for (int i = 0; i < 4; ++i)
 	{
-		ledPins[i].init(LED_PINS_CONFIG[i]);
+		ledPins[i].initialize(LED_PINS_CONFIG[i]);
 	}
 #endif
 
 #ifdef USE_LAUNCHXL_PINS_FOR_PROFILING
-	profilerPinP22.init(PROFILER_PIN_P22_CONFIG);
-	profilerPinP111.init(PROFILER_PIN_P111_CONFIG);
-	profilerPinP56.init(PROFILER_PIN_P56_CONFIG);
+	profilerPinP22.initialize(PROFILER_PIN_P22_CONFIG);
+	profilerPinP111.initialize(PROFILER_PIN_P111_CONFIG);
+	profilerPinP56.initialize(PROFILER_PIN_P56_CONFIG);
 #endif
 }
 

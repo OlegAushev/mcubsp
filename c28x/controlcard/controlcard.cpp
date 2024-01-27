@@ -21,7 +21,7 @@ const mcu::gpio::Config controlcard::led_red_config(
 
 
 void controlcard::init_led_red(mcu::gpio::MasterCore core) {
-    led_red.init(led_red_config);
+    led_red.initialize(led_red_config);
     led_red.set_master_core(core);
 }
 

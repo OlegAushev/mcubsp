@@ -75,7 +75,7 @@ public:
     static mcu::gpio::OutputPin profiler_pin_d3;
 #endif
 
-    static void init();
+    static void initialize();
     static void enable_driver_power_supply(Phase phase) { psdis_pins[phase.underlying_value()].reset(); }
     static void enable_driver_power_supply() {
         enable_driver_power_supply(Phase::u);

@@ -105,30 +105,30 @@ mcu::gpio::OutputPin crd600::profiler_pin_d3;
 #endif
 
 
-void crd600::init() {
+void crd600::initialize() {
     for (int i = 0; i < phase_count; ++i) {
-        psdis_pins[i].init(psdis_pins_configs[i]);
-        len_pins[i].init(len_pins_configs[i]);
-        ocen_pins[i].init(ocen_pins_configs[i]);
-        fault_pins[i].init(fault_pins_configs[i]);
+        psdis_pins[i].initialize(psdis_pins_configs[i]);
+        len_pins[i].initialize(len_pins_configs[i]);
+        ocen_pins[i].initialize(ocen_pins_configs[i]);
+        fault_pins[i].initialize(fault_pins_configs[i]);
     }
 
-    fault_uvw_pin.init(fault_uvw_pin_config);
-    fault_xyz_pin.init(fault_xyz_pin_config);
-    fault_all_pin.init(fault_all_pin_config);
-    shutdownPos15VPin.init(shutdown_pos15v_pin_config);
+    fault_uvw_pin.initialize(fault_uvw_pin_config);
+    fault_xyz_pin.initialize(fault_xyz_pin_config);
+    fault_all_pin.initialize(fault_all_pin_config);
+    shutdownPos15VPin.initialize(shutdown_pos15v_pin_config);
 
-    led_red.init(led_red_config);
-    led_yellow.init(led_yellow_config);
-    led_green.init(led_green_config);
+    led_red.initialize(led_red_config);
+    led_yellow.initialize(led_yellow_config);
+    led_green.initialize(led_green_config);
 
 #ifdef USE_SD_PINS_FOR_PROFILING
-    profiler_pin_c1.init(profiler_pin_c1_config);
-    profiler_pin_c2.init(profiler_pin_c2_config);
-    profiler_pin_c3.init(profiler_pin_c3_config);
-    profiler_pin_d1.init(profiler_pin_d1_config);
-    profiler_pin_d2.init(profiler_pin_d2_config);
-    profiler_pin_d3.init(profiler_pin_d3_config);
+    profiler_pin_c1.initialize(profiler_pin_c1_config);
+    profiler_pin_c2.initialize(profiler_pin_c2_config);
+    profiler_pin_c3.initialize(profiler_pin_c3_config);
+    profiler_pin_d1.initialize(profiler_pin_d1_config);
+    profiler_pin_d2.initialize(profiler_pin_d2_config);
+    profiler_pin_d3.initialize(profiler_pin_d3_config);
 #endif
 }
 
