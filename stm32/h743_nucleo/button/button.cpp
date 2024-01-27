@@ -26,7 +26,7 @@ const mcu::gpio::Config button_config = {
 
 
 void init_button() {
-    button.init(button_config);
+    button.initialize(button_config);
 }
 
 
