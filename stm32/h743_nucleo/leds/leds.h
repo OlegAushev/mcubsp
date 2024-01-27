@@ -14,13 +14,13 @@ namespace bsp {
 namespace nucleo {
 
 
-extern mcu::gpio::Output led_green;
+extern mcu::gpio::OutputPin led_green;
 extern const mcu::gpio::Config led_green_config;
 
-extern mcu::gpio::Output led_blue;
+extern mcu::gpio::OutputPin led_blue;
 extern const mcu::gpio::Config led_blue_config;
 
-extern mcu::gpio::Output led_red;
+extern mcu::gpio::OutputPin led_red;
 extern const mcu::gpio::Config led_red_config;
 
 

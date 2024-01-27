@@ -16,7 +16,7 @@ private:
     static const mcu::gpio::Config led_red_config;
 public:
     static void init_led_red(mcu::gpio::MasterCore core = mcu::gpio::MasterCore::cpu1);
-    static mcu::gpio::Output led_red;
+    static mcu::gpio::OutputPin led_red;
 
     static const uint32_t cana_rx_pin = 30;
     static const uint32_t cana_rx_pinmux = GPIO_30_CANRXA;

@@ -8,7 +8,7 @@
 namespace bsp {
 
 
-mcu::gpio::Output controlcard::led_red;
+mcu::gpio::OutputPin controlcard::led_red;
 const mcu::gpio::Config controlcard::led_red_config(
     34,
     GPIO_34_GPIO34,

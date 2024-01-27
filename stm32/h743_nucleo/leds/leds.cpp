@@ -11,7 +11,7 @@ namespace bsp {
 namespace nucleo {
 
 
-mcu::gpio::Output led_green;
+mcu::gpio::OutputPin led_green;
 const mcu::gpio::Config led_green_config = {	
     .port = GPIOB,
     .pin = {
@@ -25,7 +25,7 @@ const mcu::gpio::Config led_green_config = {
 };
 
 
-mcu::gpio::Output led_blue;
+mcu::gpio::OutputPin led_blue;
 const mcu::gpio::Config led_blue_config = {	
     .port = GPIOB,
     .pin = {
@@ -39,7 +39,7 @@ const mcu::gpio::Config led_blue_config = {
 };
 
 
-mcu::gpio::Output led_red;
+mcu::gpio::OutputPin led_red;
 const mcu::gpio::Config led_red_config = {
     .port = GPIOB,
     .pin = {

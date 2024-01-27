@@ -51,28 +51,28 @@ private:
     static emb::array<mcu::gpio::Output, phase_count> psdis_pins;
     static emb::array<mcu::gpio::Output, phase_count> len_pins;
     static emb::array<mcu::gpio::Output, phase_count> ocen_pins;
-    static mcu::gpio::Output shutdownPos15VPin;
+    static mcu::gpio::OutputPin shutdownPos15VPin;
 public:
     static emb::array<mcu::gpio::Input, phase_count> fault_pins;
-    static mcu::gpio::Input fault_uvw_pin;
-    static mcu::gpio::Input fault_xyz_pin;
-    static mcu::gpio::Input fault_all_pin;
+    static mcu::gpio::InputPin fault_uvw_pin;
+    static mcu::gpio::InputPin fault_xyz_pin;
+    static mcu::gpio::InputPin fault_all_pin;
 
     static const mcu::gpio::Config led_red_config;
     static const mcu::gpio::Config led_yellow_config;
     static const mcu::gpio::Config led_green_config;
 
-    static mcu::gpio::Output led_red;
-    static mcu::gpio::Output led_yellow;
-    static mcu::gpio::Output led_green;
+    static mcu::gpio::OutputPin led_red;
+    static mcu::gpio::OutputPin led_yellow;
+    static mcu::gpio::OutputPin led_green;
 
 #ifdef USE_SD_PINS_FOR_PROFILING
-    static mcu::gpio::Output profiler_pin_c1;
-    static mcu::gpio::Output profiler_pin_c2;
-    static mcu::gpio::Output profiler_pin_c3;
-    static mcu::gpio::Output profiler_pin_d1;
-    static mcu::gpio::Output profiler_pin_d2;
-    static mcu::gpio::Output profiler_pin_d3;
+    static mcu::gpio::OutputPin profiler_pin_c1;
+    static mcu::gpio::OutputPin profiler_pin_c2;
+    static mcu::gpio::OutputPin profiler_pin_c3;
+    static mcu::gpio::OutputPin profiler_pin_d1;
+    static mcu::gpio::OutputPin profiler_pin_d2;
+    static mcu::gpio::OutputPin profiler_pin_d3;
 #endif
 
     static void init();

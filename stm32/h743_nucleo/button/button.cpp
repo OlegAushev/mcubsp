@@ -11,7 +11,7 @@ namespace bsp {
 namespace nucleo {
 
 
-mcu::gpio::Input button;
+mcu::gpio::InputPin button;
 const mcu::gpio::Config button_config = {
     .port = GPIOC,
     .pin = {

@@ -86,22 +86,22 @@ emb::array<mcu::gpio::Output, 6> crd600::psdis_pins;
 emb::array<mcu::gpio::Output, 6> crd600::len_pins;
 emb::array<mcu::gpio::Output, 6> crd600::ocen_pins;
 emb::array<mcu::gpio::Input, 6> crd600::fault_pins;
-mcu::gpio::Output crd600::shutdownPos15VPin;
+mcu::gpio::OutputPin crd600::shutdownPos15VPin;
 
-mcu::gpio::Output crd600::led_red;
-mcu::gpio::Output crd600::led_yellow;
-mcu::gpio::Output crd600::led_green;
+mcu::gpio::OutputPin crd600::led_red;
+mcu::gpio::OutputPin crd600::led_yellow;
+mcu::gpio::OutputPin crd600::led_green;
 
-mcu::gpio::Input crd600::fault_uvw_pin;
-mcu::gpio::Input crd600::fault_xyz_pin;
-mcu::gpio::Input crd600::fault_all_pin;
+mcu::gpio::InputPin crd600::fault_uvw_pin;
+mcu::gpio::InputPin crd600::fault_xyz_pin;
+mcu::gpio::InputPin crd600::fault_all_pin;
 #ifdef USE_SD_PINS_FOR_PROFILING
-mcu::gpio::Output crd600::profiler_pin_c1;
-mcu::gpio::Output crd600::profiler_pin_c2;
-mcu::gpio::Output crd600::profiler_pin_c3;
-mcu::gpio::Output crd600::profiler_pin_d1;
-mcu::gpio::Output crd600::profiler_pin_d2;
-mcu::gpio::Output crd600::profiler_pin_d3;
+mcu::gpio::OutputPin crd600::profiler_pin_c1;
+mcu::gpio::OutputPin crd600::profiler_pin_c2;
+mcu::gpio::OutputPin crd600::profiler_pin_c3;
+mcu::gpio::OutputPin crd600::profiler_pin_d1;
+mcu::gpio::OutputPin crd600::profiler_pin_d2;
+mcu::gpio::OutputPin crd600::profiler_pin_d3;
 #endif
 
 

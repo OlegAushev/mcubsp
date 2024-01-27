@@ -18,8 +18,8 @@ private:
 public:
     static void init_led_blue(mcu::gpio::MasterCore core = mcu::gpio::MasterCore::cpu1);
     static void init_led_red(mcu::gpio::MasterCore core = mcu::gpio::MasterCore::cpu1);
-    static mcu::gpio::Output led_blue;
-    static mcu::gpio::Output led_red;
+    static mcu::gpio::OutputPin led_blue;
+    static mcu::gpio::OutputPin led_red;
 
     static const uint32_t j1_scib_rx_pin = 19;
     static const uint32_t j1_scib_rx_pinmux = GPIO_19_SCIRXDB;

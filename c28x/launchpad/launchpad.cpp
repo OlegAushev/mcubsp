@@ -8,7 +8,7 @@
 namespace bsp {
 
 
-mcu::gpio::Output launchpad::led_blue;
+mcu::gpio::OutputPin launchpad::led_blue;
 const mcu::gpio::Config launchpad::led_blue_config(
     31,
     GPIO_31_GPIO31,
@@ -20,7 +20,7 @@ const mcu::gpio::Config launchpad::led_blue_config(
 );
 
 
-mcu::gpio::Output launchpad::led_red;
+mcu::gpio::OutputPin launchpad::led_red;
 const mcu::gpio::Config launchpad::led_red_config(
     34,
     GPIO_34_GPIO34,
