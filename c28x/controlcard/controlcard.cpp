@@ -13,7 +13,7 @@ const mcu::gpio::Config controlcard::led_red_config(
     34,
     GPIO_34_GPIO34,
     mcu::gpio::Direction::output,
-    emb::gpio::active_state::low,
+    emb::gpio::active_pin_state::low,
     mcu::gpio::Type::std,
     mcu::gpio::QualMode::sync,
     1

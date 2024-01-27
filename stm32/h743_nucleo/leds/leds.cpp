@@ -21,7 +21,7 @@ const mcu::gpio::Config led_green_config = {
         .Speed = GPIO_SPEED_FREQ_LOW,
         .Alternate = 0
     },
-    .actstate = emb::gpio::active_state::high
+    .actstate = emb::gpio::active_pin_state::high
 };
 
 
@@ -35,7 +35,7 @@ const mcu::gpio::Config led_blue_config = {
         .Speed = GPIO_SPEED_FREQ_LOW,
         .Alternate = 0
     },
-    .actstate = emb::gpio::active_state::high
+    .actstate = emb::gpio::active_pin_state::high
 };
 
 
@@ -49,7 +49,7 @@ const mcu::gpio::Config led_red_config = {
         .Speed = GPIO_SPEED_FREQ_LOW,
         .Alternate = 0
     },
-    .actstate = emb::gpio::active_state::high
+    .actstate = emb::gpio::active_pin_state::high
 };
 
 

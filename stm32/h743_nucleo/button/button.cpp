@@ -21,7 +21,7 @@ const mcu::gpio::Config button_config = {
         .Speed = GPIO_SPEED_FREQ_LOW,
         .Alternate = 0
     },
-    .actstate = emb::gpio::active_state::high
+    .actstate = emb::gpio::active_pin_state::high
 };
 
 
