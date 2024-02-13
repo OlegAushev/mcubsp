@@ -53,17 +53,17 @@ const mcu::gpio::Config led_red_config = {
 };
 
 
-void init_led_green() {
+void initialize_led_green() {
     led_green.initialize(led_green_config);
 }
 
 
-void init_led_blue() {
+void initialize_led_blue() {
     led_blue.initialize(led_blue_config);
 }
 
 
-void init_led_red() {
+void initialize_led_red() {
     led_red.initialize(led_red_config);
 }
 

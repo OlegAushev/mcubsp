@@ -24,9 +24,9 @@ extern mcu::gpio::OutputPin led_red;
 extern const mcu::gpio::Config led_red_config;
 
 
-void init_led_green();
-void init_led_blue();
-void init_led_red();
+void initialize_led_green();
+void initialize_led_blue();
+void initialize_led_red();
 
 
 } // namespace nucleo
