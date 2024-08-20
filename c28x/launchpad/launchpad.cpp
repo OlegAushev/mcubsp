@@ -33,13 +33,13 @@ const mcu::gpio::Config launchpad::led_red_config(
 
 
 void launchpad::init_led_blue(mcu::gpio::MasterCore core) {
-    led_blue.initialize(led_blue_config);
+    led_blue.init(led_blue_config);
     led_blue.set_master_core(core);
 }
 
 
 void launchpad::init_led_red(mcu::gpio::MasterCore core) {
-    led_red.initialize(led_red_config);
+    led_red.init(led_red_config);
     led_red.set_master_core(core);
 }
 
