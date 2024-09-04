@@ -9,27 +9,29 @@ namespace bsp {
 
 
 mcu::gpio::OutputPin launchpad::led_blue;
-const mcu::gpio::Config launchpad::led_blue_config(
+const mcu::gpio::PinConfig launchpad::led_blue_config = {
     31,
     GPIO_31_GPIO31,
     mcu::gpio::Direction::output,
     emb::gpio::active_pin_state::low,
     mcu::gpio::Type::std,
     mcu::gpio::QualMode::sync,
-    1
-);
+    1,
+    mcu::gpio::MasterCore::cpu1
+};
 
 
 mcu::gpio::OutputPin launchpad::led_red;
-const mcu::gpio::Config launchpad::led_red_config(
+const mcu::gpio::PinConfig launchpad::led_red_config = {
     34,
     GPIO_34_GPIO34,
     mcu::gpio::Direction::output,
     emb::gpio::active_pin_state::low,
     mcu::gpio::Type::std,
     mcu::gpio::QualMode::sync,
-    1
-);
+    1,
+    mcu::gpio::MasterCore::cpu1
+};
 
 
 void launchpad::init_led_blue(mcu::gpio::MasterCore core) {

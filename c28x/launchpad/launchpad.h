@@ -13,8 +13,8 @@ namespace bsp {
 
 class launchpad {
 private:
-    static const mcu::gpio::Config led_blue_config;
-    static const mcu::gpio::Config led_red_config;
+    static const mcu::gpio::PinConfig led_blue_config;
+    static const mcu::gpio::PinConfig led_red_config;
 public:
     static void init_led_blue(mcu::gpio::MasterCore core = mcu::gpio::MasterCore::cpu1);
     static void init_led_red(mcu::gpio::MasterCore core = mcu::gpio::MasterCore::cpu1);
