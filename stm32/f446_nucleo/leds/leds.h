@@ -15,13 +15,13 @@ namespace nucleo {
 
 
 extern mcu::gpio::OutputPin led_green;
-extern const mcu::gpio::Config led_green_config;
+extern const mcu::gpio::PinConfig led_green_config;
 
 extern mcu::gpio::OutputPin led_blue;
-extern const mcu::gpio::Config led_blue_config;
+extern const mcu::gpio::PinConfig led_blue_config;
 
 extern mcu::gpio::OutputPin led_red;
-extern const mcu::gpio::Config led_red_config;
+extern const mcu::gpio::PinConfig led_red_config;
 
 
 void init_led_green();

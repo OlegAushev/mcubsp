@@ -12,7 +12,7 @@ namespace nucleo {
 
 
 mcu::gpio::OutputPin led_green;
-const mcu::gpio::Config led_green_config = {	
+const mcu::gpio::PinConfig led_green_config = {	
     .port = GPIOB,
     .pin = {
         .Pin = GPIO_PIN_0,
@@ -26,7 +26,7 @@ const mcu::gpio::Config led_green_config = {
 
 
 mcu::gpio::OutputPin led_blue;
-const mcu::gpio::Config led_blue_config = {	
+const mcu::gpio::PinConfig led_blue_config = {	
     .port = GPIOB,
     .pin = {
         .Pin = GPIO_PIN_7,
@@ -40,7 +40,7 @@ const mcu::gpio::Config led_blue_config = {
 
 
 mcu::gpio::OutputPin led_red;
-const mcu::gpio::Config led_red_config = {
+const mcu::gpio::PinConfig led_red_config = {
     .port = GPIOB,
     .pin = {
         .Pin = GPIO_PIN_14,
