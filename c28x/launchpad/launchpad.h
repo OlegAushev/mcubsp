@@ -13,13 +13,13 @@ namespace bsp {
 
 class launchpad {
 private:
-    static const mcu::gpio::PinConfig led_blue_config;
-    static const mcu::gpio::PinConfig led_red_config;
+    static const mcu::c28x::gpio::PinConfig led_blue_config;
+    static const mcu::c28x::gpio::PinConfig led_red_config;
 public:
-    static void init_led_blue(mcu::gpio::MasterCore core = mcu::gpio::MasterCore::cpu1);
-    static void init_led_red(mcu::gpio::MasterCore core = mcu::gpio::MasterCore::cpu1);
-    static mcu::gpio::OutputPin led_blue;
-    static mcu::gpio::OutputPin led_red;
+    static void init_led_blue(mcu::c28x::gpio::MasterCore core = mcu::c28x::gpio::MasterCore::cpu1);
+    static void init_led_red(mcu::c28x::gpio::MasterCore core = mcu::c28x::gpio::MasterCore::cpu1);
+    static mcu::c28x::gpio::OutputPin led_blue;
+    static mcu::c28x::gpio::OutputPin led_red;
 
     static const uint32_t j1_scib_rx_pin = 19;
     static const uint32_t j1_scib_rx_pinmux = GPIO_19_SCIRXDB;
