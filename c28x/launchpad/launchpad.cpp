@@ -2,7 +2,7 @@
 #ifdef _LAUNCHXL_F28379D
 
 
-#include "launchpad.h"
+#include "launchpad.hpp"
 
 
 namespace bsp {

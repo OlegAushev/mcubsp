@@ -2,7 +2,7 @@
 #ifdef CRD300
 
 
-#include "crd300.h"
+#include "crd300.hpp"
 
 
 namespace crd300 {

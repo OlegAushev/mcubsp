@@ -6,8 +6,8 @@
 #define USE_SD_PINS_FOR_PROFILING
 
 
-#include <mcudrv/c28x/f2837xd/system/system.h>
-#include <mcudrv/c28x/f2837xd/gpio/gpio.h>
+#include <mcudrv/c28x/f2837xd/system/system.hpp>
+#include <mcudrv/c28x/f2837xd/gpio/gpio.hpp>
 #include <emblib/core.hpp>
 #include <emblib/array.hpp>
 #include <math.h>

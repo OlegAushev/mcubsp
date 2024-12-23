@@ -2,7 +2,7 @@
 #ifdef CRD600
 
 
-#include "crd600.h"
+#include "crd600.hpp"
 
 
 namespace bsp {

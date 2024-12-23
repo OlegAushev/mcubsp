@@ -5,7 +5,7 @@
 #ifdef _LAUNCHXL_F28379D
 
 
-#include <mcudrv/c28x/f2837xd/gpio/gpio.h>
+#include <mcudrv/c28x/f2837xd/gpio/gpio.hpp>
 
 
 namespace bsp {

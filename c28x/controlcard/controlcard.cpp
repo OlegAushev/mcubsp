@@ -2,7 +2,7 @@
 #ifdef CONTROLCARD
 
 
-#include "controlcard.h"
+#include "controlcard.hpp"
 
 
 namespace bsp {
